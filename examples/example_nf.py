@@ -1,4 +1,3 @@
-
 import pandas as pd
 import matplotlib.pyplot as plt
 from market_profile import MarketProfile
@@ -47,6 +46,7 @@ vah=mp_slice.value_area[1]
 poc=mp_slice.poc_price
 "PLot value area as horizontal lines on price chart and save the plot as image in local disk"
 plt.figure()
+plt.plot(df.Close)
 plt.axhline(y=vah,linewidth=2, color='green')
 plt.axhline(y=val,linewidth=2, color='red')
 plt.axhline(y=poc,linewidth=2, color='yellow')
@@ -54,5 +54,4 @@ fig = plt.gcf()
 fig.set_size_inches(22, 10.5)
 "Change the folder name"
 fig.savefig('d:/export/mymp.png', dpi=98, bbox_inches='tight', pad_inches=0.1)
-#plt.plot(df.close)
 view rawnfmp.py hosted with ❤ by GitHub
