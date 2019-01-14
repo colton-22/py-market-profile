@@ -109,7 +109,7 @@ for n in range(0,nsplits):
     
 df_mpstats = pd.DataFrame({'date':date_l,'open':open_l,'high':high_l,'low':low_l,'Close':close_l,'volume':vol_l,
                            'VAH':vah_l,'VAL':val_l,'POC':poc_l,'DailyRange':range_l,'ExcessLow':xcessl_l,
-                           'ExcessHigh':xcessh_l})
+                           'ExcessHigh':xcessh_l,'IBhigh':ibh_l,'IBlow':ibl_l})
 df_mpstats = df_mpstats.set_index('date',drop=False)
 
 df_mpstats.to_csv('d:/export/mp/mpstats.csv',sep=',',index=False)
