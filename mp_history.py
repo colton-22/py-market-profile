@@ -51,6 +51,7 @@ for n in range(0,nsplits):
     dlow = dfsplit[n]['Low'].min()
     dhigh = dfsplit[n]['High'].max()
     drange=(dhigh-dlow)
+    drange=int(round(drange,2))
     "tick size = 1/35th of daily range. For range of 50 ticksize is 50/35=1.43"
     ticksize=drange/35
     
@@ -118,4 +119,4 @@ df_mpstats.to_csv('d:/export/mp/mpstats.csv',sep=',',index=False)
 df_mpstats.insert(0, 'symbol', 'mymp')
 df_mpstats['date'] = pd.to_datetime(df_mpstats['date'],format='%Y%m%d',infer_datetime_format=False)
 
-df_mpstats[['symbol','date','open','VAH','VAL','POC','DailyRange']].to_csv('d:/export/mp/cust_ticker.csv',sep=',',index=False)
+df_mpstats[['symbol','date','POC','VAH','VAL','Close','DailyRange']].to_csv('d:/export/mp/cust_ticker.csv',sep=',',index=False)
