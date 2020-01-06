@@ -26,7 +26,7 @@ You can view a Python code as an example here: `<https://gist.github.com/stoictr
 Documentation
 =============
 
-(Coming soon)
+Check my Medium post for details. Market Profile Value Area Calculations With Nifty Future As An Example https://link.medium.com/X8ThgRNYE2
 
 What is `Market Profile <http://eminimind.com/the-ultimate-guide-to-market-profile/>`_ and `How are these calculated <https://www.sierrachart.com/index.php?page=doc/StudiesReference/TimePriceOpportunityCharts.html#Calculations>`_?
 
