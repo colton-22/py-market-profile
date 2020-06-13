@@ -21,9 +21,10 @@ Installation
 Documentation
 =============
 
-Check my Medium post for details. Market Profile Value Area Calculations With Nifty Future As An Example https://link.medium.com/X8ThgRNYE2
+[Example](https://github.com/stoictrader/py-market-profile/blob/master/examples/example_nf.py)
 
-What is `Market Profile <http://eminimind.com/the-ultimate-guide-to-market-profile/>`_ and `How are these calculated <https://www.sierrachart.com/index.php?page=doc/StudiesReference/TimePriceOpportunityCharts.html#Calculations>`_?
+
+[What is Market Profile](https://medium.com/@beinghorizontal/bot-primer-part-2-market-profile-cc6d8fbc7769)
 
 Development
 ===========
