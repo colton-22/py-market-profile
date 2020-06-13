@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from market_profile import MarketProfile
 
-df = pd.read_csv('_NF1.txt', sep=",")
+df = pd.read_csv('_NF1.txt', sep=",") #check _NF1.txt in example folder for testing 
 df.columns = ['symbol','date','time','Open','High','Low','Close','Volume']
 
 ("""Convert date and time to pandas datetime format. First merge date and time column, if your data is already in datetime 
