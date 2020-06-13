@@ -18,11 +18,6 @@ Installation
 
     pip install marketprofile
 
-Example
-=======
-
-You can view a Python code as an example here: `<https://gist.github.com/stoictrader/f0c26f7e59a7b62fd938d68c6f66b072#file-nfmp-py>`_
-
 Documentation
 =============
 
