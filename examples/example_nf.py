@@ -2,11 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from market_profile import MarketProfile
 
-"read data from csv or comma delimited text file, change the path accordingly"
-#path = 'C:/Users/alex1/Dropbox/Python2/nf_hist.txt'
-path = 'd:/export/_NF1.txt'
-df = pd.read_csv(path, sep=",")
-"No headers in the csv so let's assign them. If data format is diferent then chnage accordingly but column name 'Close' has to be in capital"
+df = pd.read_csv('_NF1.txt', sep=",")
 df.columns = ['symbol','date','time','Open','High','Low','Close','Volume']
 
 ("""Convert date and time to pandas datetime format. First merge date and time column, if your data is already in datetime 
