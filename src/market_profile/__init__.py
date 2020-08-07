@@ -38,14 +38,14 @@ class MarketProfileSlice(object):
         self.build_profile()
 
     def open_range(self):
-        end = self.ds.iloc[0].name + self.mp.open_range_delta
+        end = self.ds.iloc[2].name + self.mp.open_range_delta
         ds = self.ds.loc[:end]
-        return np.min(ds['Low']), np.max(ds['High'])
+        return np.min(ds[' Last']), np.max(ds[' Last'])
 
     def initial_balance(self):
-        end = self.ds.iloc[0].name + self.mp.initial_balance_delta
+        end = self.ds.iloc[2].name + self.mp.initial_balance_delta
         ds = self.ds.loc[:end]
-        return np.min(ds['Low']), np.max(ds['High'])
+        return np.min(ds[' Last']), np.max(ds' Last'])
 
     def calculate_value_area(self):
         target_vol = self.total_volume * self.mp.value_area_pct
@@ -94,7 +94,7 @@ class MarketProfileSlice(object):
         if self.mp.mode == 'tpo':
             self.profile = self.ds.groupby(rounded_set)['Close'].count()
         elif self.mp.mode == 'vol':
-            self.profile = self.ds.groupby(rounded_set)['Volume'].sum()
+            self.profile = self.ds.groupby(rounded_set)[' Volume'].sum()
         else:
             raise ValueError("Unrecognized mode: %s" % self.mp.mode)
 
